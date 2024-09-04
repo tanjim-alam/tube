@@ -182,7 +182,7 @@ function ServiceCard({ packageData }) {
                     <div className='flex flex-col gap-2 '>
                         {
                             keys.map((key, i) => (
-                                <div key={i} className='flex items-center gap-2 text-sm'>
+                                <div key={i} className='flex items-center gap-2 text-sm text-black'>
                                     <span><IoMdDoneAll /></span>
                                     <span>{key}</span>
                                 </div>

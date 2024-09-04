@@ -12,7 +12,7 @@ const ContentSection1 = dynamic(() => import('../components/ContentSection1'));
 const ContentSection2 = dynamic(() => import('../components/ContentSection2'));
 const FaqSection = dynamic(() => import('../components/FaqSection'));
 const ServiceCard = dynamic(() => import('../components/ServiceCard'));
-// const HeroSection = dynamic(() => import('../components/HeroSection'));
+// const HeroSection = dynamic(() => import('../components/HeroSection'), { ssr: true });
 const ReviewsSection = dynamic(() => import('../components/ReviewsSection'));
 
 import youtubeViewsData from "../../constant/youtube/youtubeViewsData.json";

@@ -153,13 +153,6 @@ function AllServicesSection() {
         setActiveId(id === activeId ? null : id); // Toggle the active id
     }
 
-    const services = [
-        { id: 1, title: "Buy YouTube Views", slug: "youtube-views" },
-        { id: 2, title: "Buy YouTube Subscribers", slug: "youtube-subscribers" },
-        { id: 3, title: "Buy YouTube Likes", slug: "youtube-likes" },
-        { id: 4, title: "Buy YouTube Comments", slug: "youtube-comments" },
-        { id: 5, title: "Buy YouTube Live Views", slug: "youtube-live-views" },
-    ]
     return (
         <div className='bg-white'>
             <div className='lg:w-[70%] w-[90%] py-16 m-auto'>

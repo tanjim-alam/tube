@@ -229,7 +229,7 @@ function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
     const { cartItems } = useCart();
-    console.log(cartItems);
+    // console.log(cartItems);
     return (
         <>
             <div className='bg-white border-b sticky top-0 z-50 hidden lg:block h-[55px]'>
