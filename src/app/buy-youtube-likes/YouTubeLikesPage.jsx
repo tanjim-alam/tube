@@ -1,18 +1,22 @@
+import dynamic from 'next/dynamic';
 import React from 'react'
-import PackageSection from '../components/PackageSection'
-import WhyYouChooseSection from '../components/WhyYouChooseSection'
-import FeaturesSection from '../components/FeaturesSection'
-import ContentSection1 from '../components/ContentSection1'
-import ContentSection2 from '../components/ContentSection2'
-import FaqSection from '../components/FaqSection'
-import youtubeLikesData from "../../constant/youtube/youtubeLikesData.json";
-import ServiceCard from '../components/ServiceCard';
 import { IoSearch } from "react-icons/io5";
 import { IoMdWatch } from "react-icons/io";
 import { BsGraphDownArrow } from "react-icons/bs";
 import { MdSupportAgent, MdOutlinePayment, MdLockOutline, MdOutlineWarning, MdLightMode } from "react-icons/md";
-import HeroSection from '../components/HeroSection'
-import ReviewsSection from '../components/ReviewsSection'
+
+// Dynamically import components (Ensure these are default exports in their files)
+const WhyYouChooseSection = dynamic(() => import('../components/WhyYouChooseSection'));
+const FeaturesSection = dynamic(() => import('../components/FeaturesSection'));
+const ContentSection1 = dynamic(() => import('../components/ContentSection1'));
+const ContentSection2 = dynamic(() => import('../components/ContentSection2'));
+const FaqSection = dynamic(() => import('../components/FaqSection'));
+const ServiceCard = dynamic(() => import('../components/ServiceCard'));
+const HeroSection = dynamic(() => import('../components/HeroSection'));
+const ReviewsSection = dynamic(() => import('../components/ReviewsSection'));
+
+import youtubeLikesData from "../../constant/youtube/youtubeLikesData.json";
+
 
 function YouTubeLikesPage() {
     const featuresData = [

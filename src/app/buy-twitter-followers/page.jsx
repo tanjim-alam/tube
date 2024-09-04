@@ -8,15 +8,15 @@ import { BsGraphDownArrow } from "react-icons/bs";
 import { MdSupportAgent, MdOutlinePayment, MdLockOutline, MdOutlineWarning, MdLightMode } from "react-icons/md";
 
 // Dynamic Imports
-const PackageSection = dynamic(() => import('../components/PackageSection'), { ssr: false });
-const WhyYouChooseSection = dynamic(() => import('../components/WhyYouChooseSection'), { ssr: false });
-const FeaturesSection = dynamic(() => import('../components/FeaturesSection'), { ssr: false });
-const ContentSection1 = dynamic(() => import('../components/ContentSection1'), { ssr: false });
-const ContentSection2 = dynamic(() => import('../components/ContentSection2'), { ssr: false });
-const FaqSection = dynamic(() => import('../components/FaqSection'), { ssr: false });
-const ServiceCard = dynamic(() => import('../components/ServiceCard'), { ssr: false });
-const HeroSection = dynamic(() => import('../components/HeroSection'), { ssr: false });
-const ReviewsSection = dynamic(() => import('../components/ReviewsSection'), { ssr: false });
+// const WhyYouChooseSection = dynamic(() => import('../components/WhyYouChooseSection'), { ssr: false });
+const WhyYouChooseSection = dynamic(() => import('../components/WhyYouChooseSection'));
+const FeaturesSection = dynamic(() => import('../components/FeaturesSection'));
+const ContentSection1 = dynamic(() => import('../components/ContentSection1'));
+const ContentSection2 = dynamic(() => import('../components/ContentSection2'));
+const FaqSection = dynamic(() => import('../components/FaqSection'));
+const ServiceCard = dynamic(() => import('../components/ServiceCard'));
+const HeroSection = dynamic(() => import('../components/HeroSection'));
+const ReviewsSection = dynamic(() => import('../components/ReviewsSection'));
 
 import facebookCommentsData from "../../constant/facebook/facebookCommentsData.json";
 
